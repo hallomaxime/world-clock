@@ -1,4 +1,3 @@
-// Los Angeles
 setInterval(setDateTime, 1000);
 
 function setDateTime() {
