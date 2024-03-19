@@ -4,19 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/styles.css">
     <title>World Clock</title>
 </head>
 
 <body>
     <div class="container">
         <h1>World Clock</h1>
+        <div class="city-selector">
+            <select name="" id="">
+                <option value="Paris">Paris</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Sydney">Sydney</option>
+            </select>
+        </div>
+        <div class="city">
+            <h2 class="city-name">Los Angeles 🇺🇸</h2>
+            <div class="date-time">
+                <div class="date">March 19, 2024</div>
+                <div class="time">17:49:32</div>
+            </div>
+        </div>
+        <div class="city">
+            <h2 class="city-name">Sydney 🇦🇺</h2>
+            <div class="date-time">
+                <div class="date">March 19, 2024</div>
+                <div class="time">17:49:32</div>
+            </div>
+        </div>
     </div>
 
-    <footer>Made with 🩵 by <a href="https://github.com/hallomaxime">Maxime Spithorst</a>, open-sourced on <a
-            href="https://github.com/hallomaxime/world-clock">Github</a> and hosted
-        on
-        <a href="">Netlify</a>.
+    <footer>
+        Made with 🩵 by <a href="https://github.com/hallomaxime">Maxime Spithorst</a>, open-sourced on <a
+            href="https://github.com/hallomaxime/world-clock">Github</a> and hosted on <a
+            href="https://adorable-kelpie-2d01a3.netlify.app/">Netlify</a>.
     </footer>
 </body>
 <script src="src/index.js"></script>
