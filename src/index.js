@@ -9,6 +9,16 @@ function setDateTime() {
     losAngelesTime.innerHTML = losAngelesTimeZone.format("HH:mm:ss");
   }
 
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDate = parisElement.querySelector(".date");
+    let parisTime = parisElement.querySelector(".time");
+    let parisTimeZone = moment().tz("Europe/Paris");
+
+    parisDate.innerHTML = parisTimeZone.format("MMMM Do, YYYY");
+    parisTime.innerHTML = parisTimeZone.format("HH:mm:ss");
+  }
+
   let sydneyElement = document.querySelector("#sydney");
   if (sydneyElement) {
     let sydneyDate = sydneyElement.querySelector(".date");
