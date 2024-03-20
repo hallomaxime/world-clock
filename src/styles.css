@@ -1,6 +1,6 @@
 body {
   background: radial-gradient(
-    circle at 7.5% 24%,
+    circle at 24% 97.5%,
     rgb(237, 161, 193) 0%,
     rgb(250, 178, 172) 25.5%,
     rgb(190, 228, 210) 62.3%,
@@ -24,6 +24,7 @@ h1 {
   margin: 10px 0 20px 0;
   font-family: "Outfit", sans-serif;
   font-size: 58px;
+  font-weight: normal;
 }
 
 select {
@@ -31,13 +32,15 @@ select {
   padding: 10px;
   border-radius: 24px;
   font-size: 20px;
-  border: solid 1px rgba(0, 0, 0, 0.2);
+  border: solid 1px rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  margin-bottom: 10px;
 }
 
 h2 {
   margin: 0;
   font-weight: 400;
+  opacity: 0.9;
 }
 
 .city {
