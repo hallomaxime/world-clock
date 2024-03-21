@@ -30,8 +30,8 @@ function setDateTime() {
   }
 }
 
-function changeCity(event) {
-  let cityTimeZone = event.target.value;
+function changeCity() {
+  if (!cityTimeZone) return;
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
@@ -50,10 +50,25 @@ function changeCity(event) {
       </div>
       <div class="back"><a href="/">Back to all cities</a></div>
     `;
+
+  //   function updateTime() {
+  //     let timeElement = document.querySelector(".time");
+  //     timeElement.innerHTML = `${moment().tz(cityTimeZone).format("HH:mm:ss")}`;
+  //     console.log(timeElement);
+  //   }
+
+  //   setInterval(updateTime, 1000);
 }
 
 setDateTime();
 setInterval(setDateTime, 1000);
 
 let citySelector = document.querySelector("#city-selector");
-citySelector.addEventListener("change", changeCity);
+citySelector.addEventListener("change", function (event) {
+  cityTimeZone = event.target.value;
+  changeCity();
+});
+
+let cityTimeZone = null;
+
+setInterval(changeCity, 1000);
