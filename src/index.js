@@ -50,14 +50,6 @@ function changeCity() {
       </div>
       <div class="back"><a href="/">Back to all cities</a></div>
     `;
-
-  //   function updateTime() {
-  //     let timeElement = document.querySelector(".time");
-  //     timeElement.innerHTML = `${moment().tz(cityTimeZone).format("HH:mm:ss")}`;
-  //     console.log(timeElement);
-  //   }
-
-  //   setInterval(updateTime, 1000);
 }
 
 setDateTime();
